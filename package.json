@@ -1,11 +1,13 @@
 {
+  "homepage":"https://ShowyCone.github.io/react-task-app",
   "name": "react-task-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
